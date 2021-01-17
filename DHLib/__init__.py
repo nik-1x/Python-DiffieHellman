@@ -4,7 +4,7 @@ class Encrypt:
     def __init__(self):
         print("Init:", self.__doc__)
 
-    def encrypt(self, g: int, a: int, p: int) -> int:
+    def do(self, g: int, a: int, p: int) -> int:
         c = 0
         f = 1
         a = bin(a)

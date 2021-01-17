@@ -1,7 +1,7 @@
 from DHLib import Encrypt
 
 if __name__ == '__main__':
-    dh = Encrypt()
+    enc = Encrypt()
     """
     Simple example of Diffie Hellman encryption method.
     """
@@ -19,12 +19,12 @@ if __name__ == '__main__':
     Alice_g = Bob_g
 
     # create public A, B
-    Alice_AA = dh.encrypt(Alice_g, Alice_a, Alice_p)
-    Bob_BB = dh.encrypt(Bob_g, Bob_b, Bob_p)
+    Alice_AA = enc.do(Alice_g, Alice_a, Alice_p)
+    Bob_BB = enc.do(Bob_g, Bob_b, Bob_p)
 
     # create general private K values
-    Alice_K = dh.encrypt(Bob_BB, Alice_a, Alice_p)
-    Bob_K = dh.encrypt(Alice_AA, Bob_b, Bob_p)
+    Alice_K = enc.do(Bob_BB, Alice_a, Alice_p)
+    Bob_K = enc.do(Alice_AA, Bob_b, Bob_p)
 
     print("General value[Alice_K]: ", Alice_K)
     print("General value[Bob_K]: ", Bob_K)
