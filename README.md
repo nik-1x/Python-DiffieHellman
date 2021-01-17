@@ -5,14 +5,16 @@ Hi! Its test repository. Here im testing Diffie Hellman key exchange method.
 ## Example
 ```python
 from DHLib import Encrypt
+enc = Encrypt()
 
-if __name__ == '__main__':
-	enc = Encrypt()
-	# for example we have
-	Alice_a = 10
-	g = 5
-	p = 8
-	A = enc.do(g, a, p)
+# for example we have
+a: int = 1521255211
+g: int = 125125
+p: int = 51251080512
+
+# now we need A: A=g^a mod p
+A: int = enc.do(g, a, p)
+print(A) # result: 22164961885
 ```
 
 
