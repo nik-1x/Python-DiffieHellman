@@ -9,7 +9,7 @@ from DHLib import Encrypt
 if __name__ == '__main__':
 	enc = Encrypt()
 	# for example we have
-	Alice_a = 10
+	a = 10
 	g = 5
 	p = 8
 	A = enc.do(g, a, p)
