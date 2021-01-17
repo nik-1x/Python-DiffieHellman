@@ -28,5 +28,6 @@ if __name__ == '__main__':
     Alice_K = enc.do(Bob_BB, Alice_a, Alice_p)
     Bob_K = enc.do(Alice_AA, Bob_b, Bob_p)
 
-    print("General value[Alice_K]: ", Alice_K)
-    print("General value[Bob_K]: ", Bob_K)
+    print("\r\nGeneral value[ Alice_K ]: ", Alice_K)
+    print("\r\nGeneral value[  Bob_K  ]: ", Bob_K)
+    print("\r\nAre the values the same:  ", Alice_K == Bob_K)
