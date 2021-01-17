@@ -1,8 +1,7 @@
-import DHLib
+from DHLib import Encrypt
 
 if __name__ == '__main__':
-    dh = DHLib.DHLib()
-
+    dh = Encrypt()
     """
     Simple example of Diffie Hellman encryption method.
     """
