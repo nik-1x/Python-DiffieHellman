@@ -8,15 +8,15 @@ if __name__ == '__main__':
     """
 
     # init private
-    Alice_a = 51812512512512532643623263264
-    Bob_b = 95217125125521236436243264364
+    Alice_a = 2**(256*8)*9
+    Bob_b = 2**(256*8)*3
 
     # init public p
-    Alice_p = 8521251251251215626432343624
+    Alice_p = 2**(256*8)*10
     Bob_p = Alice_p
 
     # init public g
-    Bob_g = 12972511255121261261261251
+    Bob_g = 2**(256*8)*3
     Alice_g = Bob_g
 
     # create public A, B
