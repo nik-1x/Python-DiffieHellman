@@ -6,13 +6,15 @@ Hi! Its test repository. Here im testing Diffie Hellman key exchange method.
 ```python
 from DHLib import Encrypt
 
-if __name__ == '__main__':
-	enc = Encrypt()
-	# for example we have
-	a: int = 10
-	g: int = 5
-	p: int = 8
-	A: int = enc.do(g, a, p)
+enc = Encrypt()
+
+# for example we have
+a: int = 1521255211
+g: int = 125125
+p: int = 51251080512
+V: int = enc.do(g, a, p)
+
+print(V) # result: 22164961885
 ```
 
 
