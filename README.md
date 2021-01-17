@@ -9,10 +9,10 @@ from DHLib import Encrypt
 if __name__ == '__main__':
 	enc = Encrypt()
 	# for example we have
-	a = 10
-	g = 5
-	p = 8
-	A = enc.do(g, a, p)
+	a: int = 10
+	g: int = 5
+	p: int = 8
+	A: int = enc.do(g, a, p)
 ```
 
 
