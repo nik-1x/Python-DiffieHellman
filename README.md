@@ -26,6 +26,6 @@ print(A) # result: 22164961885
 
 My GitHub -- [click to go](https://github.com/nikitt-code)
 
-My Telegram -- [click to go](https://t.me/nvdiz)
+My Telegram -- [click to go](https://t.me/niki_tt)
 
 Diffie Hellman wiki page -- [click to go](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
